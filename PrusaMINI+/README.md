@@ -8,8 +8,11 @@
     - [Helpful 3D Printer Tools](#helpful-3d-printer-tools)
   - [Slicer Guide](#slicer-guide)
     - [Beginner Guide](#beginner-guide)
-      - [Platter Tab: Tools (icons)](#platter-tab-tools-icons)
+      - [Platter Tab: Tools (Icons)](#platter-tab-tools-icons)
       - [Printer Settings Tab](#printer-settings-tab)
+      - [Filaments Tab](#filaments-tab)
+      - [Printer Settings Tab](#printer-settings-tab-1)
+    - [Advanced Guide](#advanced-guide)
 
 ## Printer Guide
 
@@ -89,7 +92,7 @@ The home screen has 4 tabs (and their tools vary depending on beginner/normal/..
 
 In the following, some notes on the tabs.
 
-#### Platter Tab: Tools (icons)
+#### Platter Tab: Tools (Icons)
 
 - In **Beginner Mode** (mode can be chosen in upper right corner, beside the login)
   - 3D view editor / Preview
@@ -112,3 +115,66 @@ In the following, some notes on the tabs.
 
 #### Printer Settings Tab
 
+The printer settings appear in the right panel in the platter tab, but we can access to more printer features/settings if we open the specific tab.
+
+Note that we choose a system preset, e.g.: `0.20mm SPEED @MINIIS 0.4`
+
+- 0.2mm: layer height; the smaller, the more detail and thinner layers
+- SPEED: whether speed of structure is favored
+- @MINIIS: printer name
+- 0.4: nozzle size
+
+Depending on the preset, the settings change.
+We have these settings:
+
+- Layers and perimeters
+  - Layer height
+    - 0.2 mm is common; 0.1 is for very detailed, 0.5 for faster drafts
+  - First layer height
+    - 0.2 mm is common
+    - Maybe it's a good idea to have a slightly thicker first layer to improve adhesion, if we have issues
+  - Perimeter: the number of shell layers (stacked walls) the infilled body will have
+    - 2 to 3 is normal
+  - Horizontal shells: they refer to the top and bottom horizontal walls
+    - 5 and 4 are common values
+  - Seam: Determines the start point of each perimeter loop, it looks like a tiny zit on the model surface. We can choose a strategy depending on our need:
+    - Random, aligned (arranged into lines), etc. 
+- Infill: how strong structures are created by filling shells with structured matrices
+  - Density: percentage of solid material vs. air
+    - 15%-20% is common; choose higher if the piece needs to be strong.
+  - Pattern: the filling pattern
+    - Common: grid, gyroid
+    - For thin objects: rectilinear
+  - Top and bottom fill patterns
+    - Common: monotonic
+- Skirt and brim: the initial layer/lines/curves before the model is printed
+  - Skirt: initial outer line
+  - Brim: inner layer attached to the model, often left to 0 mm
+- Support material: scaffolding in case we have horizontal hanging parts
+  - If we need the scaffolding, we need to click/select *Generate support material*
+  - Support material can be easily removed or snapped off from the model
+
+Note: we can check the infill stiles in the platter tab, choosing the preview tool/view.
+
+#### Filaments Tab
+
+As in the printer settings, we can choose a preset, e.g., `Prusament PLA @MINIIS`.
+
+- Filament
+  - Color
+  - Diameter: most are 1.75mm thick, but if we use other vendors we might need to change this value after measuring with a caliper.
+  - The rest of the variables depend on the vendor and product
+  - Temperature: these variables should be provided by the vendor
+    - Bed temperature (initial layer and rest)
+    - Nozzle temperature (initial layer and rest)
+    - Usually, these values are provided in the filament roll
+- Cooling: usually always on, unless we want to try expert stuff
+- Filament overrides: retraction settings; we can leave them
+
+#### Printer Settings Tab
+
+
+
+### Advanced Guide
+
+Source: [PrusaSlicer Advanced & Expert Features Tutorial](https://www.youtube.com/watch?v=auWNk8jHc3E)
