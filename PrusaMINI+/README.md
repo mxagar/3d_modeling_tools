@@ -5,7 +5,11 @@
 - [PrusaMINI+: A Guide](#prusamini-a-guide)
   - [Table of Contents](#table-of-contents)
   - [Printer Guide](#printer-guide)
+    - [Helpful 3D Printer Tools](#helpful-3d-printer-tools)
   - [Slicer Guide](#slicer-guide)
+    - [Beginner Guide](#beginner-guide)
+      - [Platter Tab: Tools (icons)](#platter-tab-tools-icons)
+      - [Printer Settings Tab](#printer-settings-tab)
 
 ## Printer Guide
 
@@ -27,12 +31,84 @@ Initial setup links:
 
 [Prusa3D: First layer issues](https://help.prusa3d.com/article/first-layer-issues_1804)
 
+[Prusament: Filaments](https://prusament.com/materials/)
+
 TBD
 
 :construction:
+
+### Helpful 3D Printer Tools
+
+- Bar glue
+- Wet towels
+- Magnifying glass
+
+
 
 ## Slicer Guide
 
-TBD
+### Beginner Guide
 
-:construction:
+Source: [PrusaSlicer Beginner Tutorial: Learn the basics](https://www.youtube.com/watch?v=_kIqMPNQNSw)
+
+The first time we open the Prusa Slicer, the **installation wizard** is launched:
+
+- Installation wizard: select printer, config, etc.
+- Also other printers than Prusa supported!
+
+Then, the home screen appears:
+
+![Prusa Slicer Home Screen](./assets/slicer_home_screen.png)
+
+In the upper right corner we can choose 3 modes:
+
+- Beginner
+- Normal: beginner settings + new ones
+- Advanced: normal settings + new ones
+
+The home screen has 4 tabs (and their tools vary depending on beginner/normal/... mode):
+
+- Platter: 3D editor
+- Printer: Choose a printer system preset
+  - Layers and perimeter
+  - Infill
+  - Skirt and brim
+  - Support material
+- Filaments: Choose filament type and characteristics
+  - PLA, etc.
+  - Vendor: Prusament, generic, etc.
+  - Diameter, density, cost, etc.
+  - Cooling
+  - Overrides
+- Printers: we should have our printer selected; here we configure its parameters
+  - Extruder:
+    - Nozzle diameter: 0.4 mm
+    - Travel lift height
+    - Retraction length
+- Printables: online store with free models
+
+In the following, some notes on the tabs.
+
+#### Platter Tab: Tools (icons)
+
+- In **Beginner Mode** (mode can be chosen in upper right corner, beside the login)
+  - 3D view editor / Preview
+    - In preview we can see the slices
+  - Add model, remove
+    - We can add several models
+    - Formats: STL, 3MF, STEP, OBJ, AMF, SVG
+      - Not GCODE!
+  - Arrange: make models disjoint
+  - Copy and Paste
+  - Move
+  - Scale
+  - Rotate
+  - Place on face
+  - Measure
+  - Variable layer height: we can add detail (thinner slices) depending on height
+- In **Normal Mode**:
+  - Cut: if the height of our model is too much, we can piece it into two objects!
+  - ...
+
+#### Printer Settings Tab
+
