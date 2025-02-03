@@ -12,6 +12,7 @@
       - [Printer Settings Tab](#printer-settings-tab)
       - [Filaments Tab](#filaments-tab)
       - [Printer Settings Tab](#printer-settings-tab-1)
+      - [Slice Now](#slice-now)
     - [Advanced Guide](#advanced-guide)
 
 ## Printer Guide
@@ -173,7 +174,31 @@ As in the printer settings, we can choose a preset, e.g., `Prusament PLA @MINIIS
 
 #### Printer Settings Tab
 
+Usually, we don't need to change anything here if the preset is correct; we can see the configuration of the extruder:
 
+- Nozzle diameter
+- Color
+- Retraction travel lift and length
+- ...
+
+#### Slice Now
+
+In the platter tab when the model is set as we want and all the configuration parameters have been correctly set in the other tabs, we can click on the **`Slice Now`** button (bottom left).
+
+- Sliding the vertical control on the scene we can see the layers
+- Sliding the horizontal control on the scene we can see the nozzle printing the layer
+  - The GCode commands appear on a box
+- We get different print statistic in a box overlaid on the scene:
+  - Perimeter, infill, etc.
+  - We can hide/visualize many things: travel, retractions, seams, etc.
+  - Note that we can change the view mode (in the box) and the shown features are different
+    - Feature type (default)
+    - Speed
+    - ...
+- Bottom left panel: time and cost are displayed, among others
+
+Finally, if we're happy with everything, we can click on **`Export G-code`** (bottom left).
+The `.BGCODE` file will be exported; we need to copy it to the USB and then print it!
 
 ### Advanced Guide
 
