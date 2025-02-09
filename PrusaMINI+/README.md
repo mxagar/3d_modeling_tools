@@ -43,7 +43,8 @@ Filaments:
 
 ### My Experience
 
-- I had an old firmware which required to be updated in 2 steps
+- I followed the official PDF guide for the setup.
+- I had an old firmware which required to be updated in 2 steps.
   - First, an intermediate version
   - Then, the latest version
   - For more details: google Prusa MINI+ update firmware
