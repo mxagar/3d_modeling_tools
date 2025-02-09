@@ -5,6 +5,9 @@
 - [PrusaMINI+: A Guide](#prusamini-a-guide)
   - [Table of Contents](#table-of-contents)
   - [Printer Guide](#printer-guide)
+    - [Setup](#setup)
+    - [My Experience](#my-experience)
+    - [Summary of Usual Workflow](#summary-of-usual-workflow)
     - [Helpful 3D Printer Tools](#helpful-3d-printer-tools)
   - [Slicer Guide](#slicer-guide)
     - [Beginner Guide](#beginner-guide)
@@ -14,40 +17,58 @@
       - [Printer Settings Tab](#printer-settings-tab-1)
       - [Slice Now](#slice-now)
     - [Advanced Guide](#advanced-guide)
+    - [Modifiers: Specific Parts with Specific Print Configurations](#modifiers-specific-parts-with-specific-print-configurations)
 
 ## Printer Guide
+
+### Setup
 
 Initial setup links:
 
 - [MANUAL: 3D Printing Handbook](https://cdn.prusa3d.com/downloads/manual/prusa3d_manual_mini_en.pdf)
 - [Start here: Software, firmware, material and articles (Prusa MINI+)](https://help.prusa3d.com/tag/mini-2)
+- [Firmware updating (MINI/MINI+): Old Firmware Versions](https://help.prusa3d.com/article/firmware-updating-mini-mini_124784)
+- [Original Prusa MINI - Calibration and First Print](https://www.youtube.com/watch?v=6Nip9EnSz7Q)
 
+Issues:
 
-[Firmware updating (MINI/MINI+): Old Firmware Versions](https://help.prusa3d.com/article/firmware-updating-mini-mini_124784)
+- [Prusa3D Forum: The first layer taken off while printing  ](https://forum.prusa3d.com/forum/general-discussion-announcements-and-releases/the-first-layer-taken-off-while-printing/)
+- [Prusa3D Forum: Life adjust Z - my way](https://forum.prusa3d.com/forum/original-prusa-i3-mk3s-mk3-assembly-and-first-prints-troubleshooting/life-adjust-z-my-way/)
+- [r/prusa: How to prevent print from detaching mid-print](https://www.reddit.com/r/prusa/comments/10qvpaw/how_to_prevent_print_from_detaching_midprint/)
+- [Prusa3D: First layer issues](https://help.prusa3d.com/article/first-layer-issues_1804)
 
-[Original Prusa MINI - Calibration and First Print](https://www.youtube.com/watch?v=6Nip9EnSz7Q)
+Filaments:
 
-[Prusa3D Forum: The first layer taken off while printing  ](https://forum.prusa3d.com/forum/general-discussion-announcements-and-releases/the-first-layer-taken-off-while-printing/)
+- [Prusament: Filaments](https://prusament.com/materials/)
 
-[Prusa3D Forum: Life adjust Z - my way](https://forum.prusa3d.com/forum/original-prusa-i3-mk3s-mk3-assembly-and-first-prints-troubleshooting/life-adjust-z-my-way/)
+### My Experience
 
-[r/prusa: How to prevent print from detaching mid-print](https://www.reddit.com/r/prusa/comments/10qvpaw/how_to_prevent_print_from_detaching_midprint/)
+- I had an old firmware which required to be updated in 2 steps
+  - First, an intermediate version
+  - Then, the latest version
+  - For more details: google Prusa MINI+ update firmware
+- I has issues with the Z level calibration and the first print
+  - I did not understand which was a good printing adhesion
+  - Finally, I downloaded the model [`./models/calibration_utils/Life Adjust Z Mini PLA.gcode`](./models/calibration_utils/Life%20Adjust%20Z%20Mini%20PLA.gcode) and I printed it using the live Z adjustment (Control, Live Z).
+  - I decided the Y value (close to `-1460`) and it worked.
+  - Then, I printed some models (among others, the ship benchmark) to check everything was fine.
 
-[Prusa3D: First layer issues](https://help.prusa3d.com/article/first-layer-issues_1804)
+### Summary of Usual Workflow
 
-[Prusament: Filaments](https://prusament.com/materials/)
-
-TBD
-
-:construction:
+- Get an STL
+- Open the STL in the PrusaSlicer
+- Set the properties of the slicing
+- Slice Now
+- Take the BGCODE file and copy it to the USB drive
+- Plug it the USB drive into the Prusa
+- Switch on Prusa
+- Select print > Select file
 
 ### Helpful 3D Printer Tools
 
 - Bar glue
 - Wet towels
 - Magnifying glass
-
-
 
 ## Slicer Guide
 
@@ -203,3 +224,7 @@ The `.BGCODE` file will be exported; we need to copy it to the USB and then prin
 ### Advanced Guide
 
 Source: [PrusaSlicer Advanced & Expert Features Tutorial](https://www.youtube.com/watch?v=auWNk8jHc3E)
+
+### Modifiers: Specific Parts with Specific Print Configurations
+
+Source: [PrusaSlicer Modifiers Tutorial](https://www.youtube.com/watch?v=X2oZKiUS7bk)
