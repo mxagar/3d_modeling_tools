@@ -13,6 +13,7 @@ This folder/document contains guides on [FreeCAD](https://www.freecad.org) param
     - [Part 3: Openings - Sketch and Pocket on Face](#part-3-openings---sketch-and-pocket-on-face)
     - [Part 4: Through-Part Pocket on Face](#part-4-through-part-pocket-on-face)
     - [Part 6: Symmetry](#part-6-symmetry)
+  - [Beginners Crash Course](#beginners-crash-course)
   - [Guía para Principiantes](#guía-para-principiantes)
 
 
@@ -247,6 +248,14 @@ To mirror an object wrt. a plane:
 - Transform body
 - Select plane: XY, XZ, or a face plane
 - Ok
+
+## Beginners Crash Course
+
+Source: [FreeCAD 1.0 Ultimate Beginners Crash Course in 1 hour for 3D printing CAD Lesson / Tutorial](https://www.youtube.com/watch?v=ZPsLhvgU8kc)
+
+TBD.
+
+:construction:
 
 ## Guía para Principiantes
 
