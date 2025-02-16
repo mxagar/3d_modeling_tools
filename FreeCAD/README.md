@@ -12,15 +12,7 @@ This folder/document contains guides on [FreeCAD](https://www.freecad.org) param
     - [Part 2: Sketch and Pad on Face](#part-2-sketch-and-pad-on-face)
     - [Part 3: Openings - Sketch and Pocket on Face](#part-3-openings---sketch-and-pocket-on-face)
     - [Part 4: Through-Part Pocket on Face](#part-4-through-part-pocket-on-face)
-    - [Part 5:](#part-5)
-    - [Part 6:](#part-6)
-    - [Part 7:](#part-7)
-    - [Part 8:](#part-8)
-    - [Part 9:](#part-9)
-    - [Part 10:](#part-10)
-    - [Part 11:](#part-11)
-    - [Part 12:](#part-12)
-    - [Part 1:](#part-1)
+    - [Part 6: Symmetry](#part-6-symmetry)
   - [Guía para Principiantes](#guía-para-principiantes)
 
 
@@ -240,27 +232,26 @@ We can check that varying the `VarSet.Size` makes the correct changes in the par
 
 ### Part 4: Through-Part Pocket on Face
 
+This part is very similar to the previous, but the **pocket** created goes through the entire object.
+
 ![Through-Part Pocket](./assets/through_pocket.png)
 
+We select the required face and create a sketch on it.
 
+### Part 6: Symmetry
 
-### Part 5: 
+To mirror an object wrt. a plane:
 
-
-### Part 6: 
-
-
-### Part 7: 
-### Part 8:
-
-### Part 9: 
-### Part 10: 
-### Part 11: 
-### Part 12: 
-### Part 1: 
-
+- Select Body
+- Tool: Mirrored
+- Transform body
+- Select plane: XY, XZ, or a face plane
+- Ok
 
 ## Guía para Principiantes
 
 Source: [FreeCAD para principiantes](https://www.youtube.com/watch?v=i2sQOnKn82o&list=PLSoJI9XzEIQyU80RC4QSMhupB1A-OgiCG&index=1)
 
+TBD.
+
+:construction:
